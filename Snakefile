@@ -1,4 +1,4 @@
-SAMPLES = ["SRR2584857_1"]
+SAMPLES = ["SRR2584403_1"]
 GENOME = ["ecoli-rel606"]
 
 rule make_vcf:
