@@ -1,12 +1,15 @@
-SAMPLES = ["SRR2584857_1"]
+SAMPLES = [
+    "SRR2584403_1",
+    "SRR2584404_1",
+    "SRR2584405_1",
+    "SRR2584857_1",
+]
 GENOME = ["ecoli-rel606"]
 
-rule make_vcf:
+rule all:
     input:
-        expand("outputs/{sample}.x.{genome}.vcf",
-               sample=SAMPLES, genome=GENOME),
-        expand("outputs/{sample}.x.{genome}.vep.txt",
-              sample=SAMPLES, genome=GENOME),
+        expand("outputs/{reads}.x.{genome}.vcf", reads=SAMPLES, genome=GENOME),
+        expand("outputs/{reads}.x.{genome}.vep.txt", reads=SAMPLES, genome=GENOME)
   
 rule uncompress_genome:
     input: "{genome}.fa.gz"
@@ -20,7 +23,7 @@ rule map_reads:
         reads="{reads}.fastq.gz",
         ref="outputs/{genome}.fa"
     output: "outputs/{reads}.x.{genome}.sam"
-    conda: "mapping"
+    conda: "/home/ctbrown/scratch3/2026-conda/smandyar/mapping"
     shell: """
         minimap2 -ax sr {input.ref} {input.reads} > {output}
     """
@@ -28,7 +31,7 @@ rule map_reads:
 rule sam_to_bam:
     input: "outputs/{reads}.x.{genome}.sam",
     output: "outputs/{reads}.x.{genome}.bam",
-    conda: "mapping"
+    conda: "/home/ctbrown/scratch3/2026-conda/smandyar/mapping"
     shell: """
         samtools view -b {input} > {output}
      """
@@ -36,7 +39,7 @@ rule sam_to_bam:
 rule sort_bam:
     input: "outputs/{reads}.x.{genome}.bam"
     output: "outputs/{reads}.x.{genome}.bam.sorted"
-    conda: "mapping"
+    conda: "/home/ctbrown/scratch3/2026-conda/smandyar/mapping"
     shell: """
         samtools sort {input} > {output}
     """
@@ -44,7 +47,7 @@ rule sort_bam:
 rule index_bam:
     input: "outputs/{reads}.x.{genome}.bam.sorted"
     output: "outputs/{reads}.x.{genome}.bam.sorted.bai"
-    conda: "mapping"
+    conda: "/home/ctbrown/scratch3/2026-conda/smandyar/mapping"
     shell: """
         samtools index {input}
     """
@@ -58,7 +61,7 @@ rule call_variants:
         pileup="outputs/{reads}.x.{genome}.pileup",
         bcf="outputs/{reads}.x.{genome}.bcf",
         vcf="outputs/{reads}.x.{genome}.vcf",
-    conda: "mapping"
+    conda: "/home/ctbrown/scratch3/2026-conda/smandyar/mapping"
     shell: """
         bcftools mpileup -Ou -f {input.ref} {input.bam} > {output.pileup}
         bcftools call -mv -Ob {output.pileup} -o {output.bcf}
@@ -84,7 +87,7 @@ rule predict_effects:
         txt="outputs/{reads}.x.{genome}.vep.txt",
         html="outputs/{reads}.x.{genome}.vep.txt_summary.html",
         warn="outputs/{reads}.x.{genome}.vep.txt_warnings.txt",
-    conda: "vep"
+    conda: "/home/ctbrown/scratch3/2026-conda/smandyar/vep"
     shell: """
        vep --fasta {input.fasta} --gff {input.gff} -i {input.vcf} -o {output.txt}
     """
