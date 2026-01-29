@@ -1,0 +1,76 @@
+HW-1 GGG201B Sharwary
+
+Q1) Which variants are present in which samples?
+Reference Genome: E. coli REL606
+
+Sample SRR2584403_1
+Variant SRR2584403_1_1: Genomic Location: 1329520 Ref Allele: T Alt Allele: G
+Variant SRR2584403_1_2: Genomic Location: 4141016 Ref Allele: C Alt Allele: A
+
+Sample SRR2584404_1
+Variant SRR2584404_1_1: Genomic Location: 238917 Ref Allele: G Alt Allele: T
+Variant SRR2584404_1_2: Genomic Location: 806308 Ref Allele: ATT Alt Allele: AT
+Variant SRR2584404_1_3: Genomic Location: 1329520 Ref Allele: T Alt Allele: G
+Variant SRR2584404_1_4: Genomic Location: 4141016 Ref Allele: C Alt Allele: A
+
+Sample SRR2584405_1
+Variant SRR2584405_1_1: Genomic Location: 15382 Ref Allele: C Alt Allele: T
+Variant SRR2584405_1_2: Genomic Location: 154497 Ref Allele: T Alt Allele: G
+Variant SRR2584405_1_3: Genomic Location: 254101 Ref Allele: T Alt Allele: G
+Variant SRR2584405_1_4: Genomic Location: 649522 Ref Allele: C Alt Allele: T
+Variant SRR2584405_1_5: Genomic Location: 692265 Ref Allele: C Alt Allele: T
+Variant SRR2584405_1_6: Genomic Location: 692268 Ref Allele: A Alt Allele: G
+Variant SRR2584405_1_7: Genomic Location: 708118 Ref Allele: T Alt Allele: C
+Variant SRR2584405_1_8: Genomic Location: 1176010 Ref Allele: T Alt Allele: G
+Variant SRR2584405_1_9: Genomic Location: 1503866 Ref Allele: A Alt Allele: C
+Variant SRR2584405_1_10: Genomic Location: 1680445 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_11: Genomic Location: 1680446 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_12: Genomic Location: 1733754 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_13: Genomic Location: 1996109 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_14: Genomic Location: 2000253 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_15: Genomic Location: 2020126 Ref Allele: C Alt Allele: G
+Variant SRR2584405_1_16: Genomic Location: 2103887 Ref Allele: ACAGCCAGCCAGCCAGCCAGCCAGCCAGCCAG Alt Allele: ACAGCCAGCCAGCCAGCCAGCCAGCCAGCCAGCCAG
+Variant SRR2584405_1_17: Genomic Location: 2296329 Ref Allele: A Alt Allele: C
+Variant SRR2584405_1_18: Genomic Location: 2330469 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_19: Genomic Location: 2330472 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_20: Genomic Location: 2416966 Ref Allele: C Alt Allele: T
+Variant SRR2584405_1_21: Genomic Location: 2671373 Ref Allele: T Alt Allele: G
+Variant SRR2584405_1_22: Genomic Location: 2671376 Ref Allele: C Alt Allele: A
+Variant SRR2584405_1_23: Genomic Location: 2682710 Ref Allele: G Alt Allele: C
+Variant SRR2584405_1_24: Genomic Location: 2682764 Ref Allele: C Alt Allele: T
+Variant SRR2584405_1_25: Genomic Location: 3090762 Ref Allele: C Alt Allele: A
+Variant SRR2584405_1_26: Genomic Location: 3090763 Ref Allele: T Alt Allele: G
+Variant SRR2584405_1_27: Genomic Location: 3268057 Ref Allele: T Alt Allele: C
+Variant SRR2584405_1_28: Genomic Location: 3351282 Ref Allele: C Alt Allele: T
+Variant SRR2584405_1_29: Genomic Location: 3509753 Ref Allele: T Alt Allele: C
+Variant SRR2584405_1_30: Genomic Location: 3568506 Ref Allele: T Alt Allele: G
+Variant SRR2584405_1_31: Genomic Location: 3762120 Ref Allele: C Alt Allele: A
+Variant SRR2584405_1_32: Genomic Location: 4029556 Ref Allele: G Alt Allele: T
+Variant SRR2584405_1_33: Genomic Location: 4029559 Ref Allele: A Alt Allele: C
+Variant SRR2584405_1_34: Genomic Location: 4192865 Ref Allele: G Alt Allele: A
+Variant SRR2584405_1_35: Genomic Location: 4497049 Ref Allele: T Alt Allele: G
+Variant SRR2584405_1_36: Genomic Location: 4503866 Ref Allele: T Alt Allele: C
+Variant SRR2584405_1_37: Genomic Location: 4504217 Ref Allele: G Alt Allele: A
+Variant SRR2584405_1_38: Genomic Location: 4504253 Ref Allele: G Alt Allele: A
+Variant SRR2584405_1_39: Genomic Location: 4505396 Ref Allele: T Alt Allele: C
+Variant SRR2584405_1_40: Genomic Location: 4505407 Ref Allele: G Alt Allele: A
+Variant SRR2584405_1_41: Genomic Location: 4506070 Ref Allele: A Alt Allele: T
+Variant SRR2584405_1_42: Genomic Location: 4593578 Ref Allele: C Alt Allele: T
+
+Sample SRR2584857_1
+Variant SRR2584857_1_1: Genomic Location: 920514 Ref Allele: T Alt Allele: C
+Variant SRR2584857_1_2: Genomic Location: 3931002 Ref Allele: A Alt Allele: C
+Variant SRR2584857_1_3: Genomic Location: 4141441 Ref Allele: C Alt Allele: T
+Variant SRR2584857_1_4: Genomic Location: 4202391 Ref Allele: T Alt Allele: G
+Variant SRR2584857_1_5: Genomic Location: 4530767 Ref Allele: CACCCTAACCCT Alt Allele: CACCCTAACCCTAACCCT
+
+Q2) Which variants are shared between two or more samples?
+Only 2 samples (SRR2584403_1 and SRR2584404_1) share 2 variants. 
+a) Variant SRR2584403_1_1 and SRR2584404_1_3:
+ecoli 1329520 T G
+b) Variant SRR2584403_1_2 and SRR2584404_1_4
+ecoli 4141016 C A
+
+Q3) Are there any variants that stand out in terms of their likely biological impact?
+
+No, none of the variants stand out in terms of their biological impact, for example causing clear disruptive coding changes.
